@@ -90,13 +90,13 @@ CUDA_VISIBLE_DEVICES=0 bash get_all_info.sh sscaltech101
 After `get info` step, we can train the prompt (default run 16 seeds, you can change it in `UPL/configs/UPLTrainer/rn50_ep50.yaml`):
 
 ```python
-bash upl_train.sh sscaltech101 rn50_ep50 end 16 16 False True rn50_random_init
+CUDA_VISIBLE_DEVICES=0 bash upl_train.sh sscaltech101 rn50_ep50 end 16 16 False True rn50_random_init
 ```
 
 If you want to use *UPL**, please change the `PSEUDO_LABEL_MODELS` in  `UPL/configs/UPLTrainer/rn50_ep50.yaml`. Please ensure that you have obatined info from all released models. Then, you can run
 
 ```python
-bash upl_train.sh sscaltech101 rn50_ep50 end 16 16 False True multiple_models_random_init
+CUDA_VISIBLE_DEVICES=0 bash upl_train.sh sscaltech101 rn50_ep50 end 16 16 False True multiple_models_random_init
 ```
 
 
