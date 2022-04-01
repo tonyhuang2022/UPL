@@ -35,5 +35,5 @@ MODEL:
     NAME: "RN101"
   
 TRAINER:
-  HHSSTrainer:
+  UPLTrainer:
     CTX_INIT: "a photo of a"

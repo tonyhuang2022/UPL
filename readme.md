@@ -28,6 +28,7 @@ The code is built on the [CoOp](https://github.com/KaiyangZhou/CoOp) and [Dassl]
 # Clone this repo
 git clone https://github.com/KaiyangZhou/Dassl.pytorch.git
 cd Dassl.pytorch/
+# git reset --hard ac6e44194b2f90e325f477aadd6d9bc3a92ce255
 
 # Create a conda environment
 conda create -n dassl python=3.7
@@ -40,6 +41,7 @@ pip install -r requirements.txt
 
 # Install torch (version >= 1.7.1) and torchvision
 conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+conda install pytorch==1.8.1 torchvision==0.9.1 cudatoolkit=10.1 -c pytorch
 
 # Install this library (no need to re-build if the source code is modified)
 python setup.py develop
