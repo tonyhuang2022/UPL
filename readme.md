@@ -57,6 +57,15 @@ cd UPL/
 # Install CLIP dependencies
 pip install -r requirements.txt
 
+######## attention ########
+# We have two soft links, and you can redirect them!
+# The `data` is linked to the datasets, and the `temp_analyze_results_miltiple` is linked to the `info`.
+# We strongly recommend that you create these two paths under the disk which have enough space, and then use
+
+rm data temp_analyze_results_miltiple # remove the existing file 
+ln -s ${your_data_path} ./data
+ln -s ${your_temp_analyze_results_miltiple_path} ./temp_analyze_results_miltiple
+
 # Finished
 ```
 
