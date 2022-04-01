@@ -40,7 +40,6 @@ conda activate dassl
 pip install -r requirements.txt
 
 # Install torch (version >= 1.7.1) and torchvision
-conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 conda install pytorch==1.8.1 torchvision==0.9.1 cudatoolkit=10.1 -c pytorch
 
 # Install this library (no need to re-build if the source code is modified)
