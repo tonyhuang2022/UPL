@@ -28,7 +28,7 @@ The code is built on the [CoOp](https://github.com/KaiyangZhou/CoOp) and [Dassl]
 # Clone this repo
 git clone https://github.com/KaiyangZhou/Dassl.pytorch.git
 cd Dassl.pytorch/
-# git reset --hard ac6e44194b2f90e325f477aadd6d9bc3a92ce255
+git reset --hard ac6e44194b2f90e325f477aadd6d9bc3a92ce255
 
 # Create a conda environment
 conda create -n dassl python=3.7
